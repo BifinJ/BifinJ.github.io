@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 5fr 12fr;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* --------start of navigation-bar----------- */
+.nav-bar{
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
+}
+.nav_bar{
+    background-color: black;
+    color: white;
+}
+.sidelink{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.sidelink i{
+    font-size: 25px;
+}
+.sidelink p{
+    font-size: 14px;
+    margin: 10px;
+}
+.sidelink::after{
+    color: #fff;
+}
+.sidelink.active-bar::after{
+    color: #04b4e0;
+}
+/* -------end of navigation bar-------- */
+
+/* -------start of header section-------- */
+.profile {
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    color: white;
+}
+.header{
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-content{
+    padding: 20px;
+    width: 270px;
+}
+.dp{
+    width: 230px;
+    height: 230px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.profile-content h1,.profile-content h4{
+    text-align: center;
+}
+.profile-content h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #f5f5f5;
+}
+.profile-content h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: #f5f5f5;
+    margin: 10px 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+.card1{
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease-in-out;
+}
+.instagram{
+    margin-top: 0.1em;
+    margin-left: 0.1em;
+    fill:#cc39a4 ;
+}
+.card1:hover{
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+}
+.card1:hover .instagram{
+    fill: white;
+}
+.card2{
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease-in-out;
+}
+.phone{
+    margin-top: 0.25em;
+    margin-left: 0em;
+    fill: black;
+}
+.card2:hover{
+    cursor: pointer;
+    scale: 1.1;
+    background-color: black;
+}
+.card2:hover .phone{
+    fill: white;
+}
+.card3{
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease-in-out;
+}
+.whatsapp{
+    margin-top: 0.3em;
+    margin-left: -0.12em;
+    fill: #075e54;
+}
+.card3:hover{
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #075e54;
+}
+.card3:hover .whatsapp{
+    fill: white;
+}
+/* ---------end of profile---------- */
+
+
+
+/* ---------start of about section--------- */
+.CONTENT{
+    margin: 0;
+    padding: 60px;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.bifin{
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    padding-top: 150px;
+    margin-bottom: 10;
+    color: crimson;
+}
+.desgn{
+    margin: 10px 0;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* --------end of about section--------- */
+
+/* ---------start of user section-------- */
+
+.title{
+    color: #04b4e0;
+}
+.info-list{
+    padding: 5px;
+    font-size: 20px;
+}
+.divwhatido h4{
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #04b4e0;
+    text-decoration: underline;
+    text-decoration-color: rgb(22, 180, 233);
+}
+.WhatIDo{
+    font-size: 20px;
+}
+
+/* scroll control */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(57, 57, 57); 
+}
+/*  */
+
+.testimonial{
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(119, 119, 119);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    margin: 10px 2px 7px;
+}
+.testimonial p{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+/* --------end of user section------- */
+
+/* ----------start of contact section--------- */
+.contact-container{
+    display: grid; 
+    grid-template-columns: 35% 65%;
+    box-sizing: border-box;
+    gap: 10px;
+}
+.contact-details{
+    display: grid;
+    grid-template-rows: repeat(4,auto);
+    padding-right: 25px;
+}
+.details{
+    height: 115px;
+    border: 2px;
+    border-style: solid;
+    border-color: grey;
+    background-color: rgb(50, 50, 50);
+    margin: 4px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.help{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    box-sizing: border-box;
+    gap: 10px;
+    height: 200px;
+}
+.input-form{
+    width: 200%;
+}
+.Help-Input-Details{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    gap: 5%;
+    box-sizing: border-box;
+}
+.input, .msg-input{
+    width: 100%;
+    border: 2px;
+    border-color: rgb(90, 90, 90);
+    border-style: solid;
+    border-radius: 10px;
+}
+.input input, .msg-input textarea{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(50, 50, 50);
+    font-size: 20px;
+    color: white;
+}
+.msg-input textarea{
+    resize: none;
+}
+.sndmsg{
+    margin-top: 20px;
+}
+.sndmsg{
+    width: 100%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.sndmsg button{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    margin: 0;
+    color: white;
+    border: 2px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #04b4e0;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.sndmsg button:hover{
+    background-color: #04b4e0;
+}
+/* ---------end of contact section-------- */
+
+
+
+
+
+
+
+
+
+
+
+.CONTENT{
+    display: none;
+}
+.CONTENT.active-section{
+    display: block;
+}
+.division{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+}
+@keyframes example {
+    from {right: -100%;}
+    to {right: 0;}
+}
